@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montaga&family=Poppins:ital,wght@0,500;1,500;1,600&family=Raleway:wght@300&family=Roboto+Serif:opsz,wght@8..144,200&family=Roboto:ital,wght@1,300&display=swap');
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+    color: #080606;
+    
+}
+
+.container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.header {
+    display: fixed;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0.55), rgb(0 0 0 / 0.5)),
+    url(imgs/fondo-landing.jpg);
+    background-size: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    
+    text-align: center;
+    padding: 20px 0;
+}
+.p-header{
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.p-header2{
+    color: rgb(250, 249, 249);
+    margin-top: 10px;
+    font-weight: bold;
+}
+.narrativa-persuasiva{
+    margin: 10px;
+    font-family:'poppins' ;
+    font-weight: bold;
+}
+
+#title1 {
+    font-size: 2.5rem;
+    color: #ff3c00;
+    background-color: #2e2424c0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.021);
+}
+
+.slogan {
+   
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: wheat;
+  
+}
+.slogan1 {
+    background-color: #2e2424c0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.021);
+
+  
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+/* Estilos para secciones */
+.section {
+    margin: 30px 0;
+}
+
+.section h2 {
+   
+    font-size: 1.8rem;
+    color: #ff3c00;
+}
+
+/* Estilos para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Altura personalizada */
+    margin-top: 20px; /* Márgenes superiores personalizados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    
+    
+}
+.contact-btn {
+    display: grid;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    
+    width: 50%;
+   
+}
+.contact-btn:hover {
+    background-color: #e55000;
+}
+
+.calidad-ingredientes {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para sección de sabor auténtico */
+.llamado-accion{
+margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.sabor-autentico {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sabor-autentico blockquote {
+    background-color: #fff;
+    font-style: italic;
+    padding: 10px;
+    border-left: 2px solid #333;
+    margin: 20px 0;
+}
+
+.sabor-autentico blockquote p {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Estilos para el botón de acción */
+.boton-accion {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton-accion:hover {
+    background-color: #e55000;
+}
+
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente solo */
+}
+
+input[type="submit"] {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+/* Enlace de WhatsApp */
+.wathsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+a:hover {
+    background-color: #128c7e;
+}
+
+/* Estilos responsivos */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 8px;
+    }
+
+    input[type="submit"],
+    a {
+        padding: 8px 16px;
+    }
+}
+#footer-creds {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem ;
+    color: #576171;
+    font-size: 0.9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #legal-creds ul {
+    display: flex;
+    flex-flow: row;
+  }
+  #legal-creds ul li {
+    padding-right: 1rem;
+  }
+  #legal-creds ul a {
+    color: #576171;
+    font-size: 0.9rem;
+  }
+  @media (max-width: 320px) {
+    #footer-creds {
+      flex-flow: column;
+    }
+  }
