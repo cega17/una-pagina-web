@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contacto/cegaweb17studio</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- GOOGLE FONTS -->
+    <!-- GOOGLE FONTs -->
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -29,7 +29,7 @@
                     </p>
                     <p>
                         <label>Direccion de Correo Electrónico</label>
-                        <input type="email" name="correo">
+                        <input type="email" name="coreeo">
                     </p>
                     <p>
                         <label>Número Telefonico </label>
@@ -52,9 +52,9 @@
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i> Pradera valle</li>
                     <li><i class="fas fa-phone"></i> (+57) 3025436756</li>
-                    <li><i class="fas fa-envelope-open-text"></i> www.cesgaweb17studio.com</li>
+                    <li><i class="fas fa-envelope-open-text"></i> wwww.cesgaweb17studio.com</li>
                 </ul>
-                <p>Dejanos un mensaje para hablar de tu próximo éxito en línea, estaremos encantados de crear tu próximo sitio web, lo que hará que tus ventas y seguidores aumenten. ¡No lo dudes, ¿qué esperas?</p>
+                <p>Dejanos un mensaje para hablar de tu proximo exito en linea, estaremos encantados de crear tu proximo sitio en web lo que hara que tus ventas y seguidores aumenten. No lo dudes que esperas?</p>
                 <p>www.cesgaweb17studio.com</p>
             </div>
         </div>
@@ -63,8 +63,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector("button[type='submit']").addEventListener("click", function(e) {
-                e.preventDefault(); // Evitar el envío del formulario por defecto
+            document.getElementById("sendMessage").addEventListener("click", function() {
                 const fullname = document.querySelector("input[name='fullname']").value;
                 const correo = document.querySelector("input[name='correo']").value;
                 const phone = document.querySelector("input[name='phone']").value;

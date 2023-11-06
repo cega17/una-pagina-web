@@ -1,12 +1,12 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fullname = $_POST["fullname"];
-    $email = $_POST["correo"];
+    $email = $_POST["email"];
     $phone = $_POST["phone"];
     $message = $_POST["message"];
 
     // Envía un correo electrónico
-    $to = "";
+    $to = "cesgael17@gmail.com";
     $subject = "Nuevo mensaje de contacto";
     $headers = "From: $email";
     $message_email = "Nombre: $fullname\nEmail: $email\nTeléfono: $phone\nMensaje: $message";
@@ -15,8 +15,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Envía un mensaje de WhatsApp (requiere la API de WhatsApp Business)
     $api_url = "https://api.twilio.com/2010-04-01/Accounts/ACCOUNT_SID/Messages.json";
     $data = array(
-        "To" => "whatsapp:+1234567890", // Reemplaza con el número de teléfono de WhatsApp
-        "From" => "whatsapp:+0987654321", // Reemplaza con el número de teléfono de WhatsApp asignado por Twilio
+        "To" => "whatsapp:+573025436756", // Reemplaza con el número de teléfono de WhatsApp
+        "From" => "whatsapp:+573025436756", // Reemplaza con el número de teléfono de WhatsApp asignado por Twilio
         "Body" => "Nuevo mensaje de contacto:\nNombre: $fullname\nEmail: $email\nTeléfono: $phone\nMensaje: $message"
     );
     $data = http_build_query($data);
